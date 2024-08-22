@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า</title>
+    <link rel="stylesheet" href="prodstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="image/Desktop Screenshot 2024.08.21 - 22.29.12.72.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/S__13926437.png" alt="Logo">
+        </div>
+        <div class="header-title">
+            <h1>CHINDEE B2C</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="contect.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-grid">
+        <div class="about-item">
+            <img src="imagesell/1.png" alt="Product 1">
+            <h3>Custom Pants 1</h3>
+            <p>Price: $50</p>
+            <button class="buy-button" onclick="openModal('modal1')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 1', '$50')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+
+        <div class="about-item">
+            <img src="imagesell/2.png" alt="Product 2">
+            <h3>Custom Pants 2</h3>
+            <p>Price: $75</p>
+            <button class="buy-button" onclick="openModal('modal2')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 2', '$75')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+
+        <div class="about-item">
+            <img src="imagesell/3.png" alt="Product 3">
+            <h3>Custom Pants 3</h3>
+            <p>Price: $100</p>
+            <button class="buy-button" onclick="openModal('modal3')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 3', '$100')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+
+        <div class="about-item">
+            <img src="imagesell/4.png" alt="Product 4">
+            <h3>Custom Pants 4</h3>
+            <p>Price: $125</p>
+            <button class="buy-button" onclick="openModal('modal4')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 4', '$125')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+
+        <div class="about-item">
+            <img src="imagesell/5.png" alt="Product 5">
+            <h3>Custom Pants 5</h3>
+            <p>Price: $150</p>
+            <button class="buy-button" onclick="openModal('modal5')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 5', '$150')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+
+        <div class="about-item">
+            <img src="imagesell/6.png" alt="Product 6">
+            <h3>Custom Pants 6</h3>
+            <p>Price: $175</p>
+            <button class="buy-button" onclick="openModal('modal6')"><i class="fas fa-credit-card"></i> ซื้อ</button>
+            <button class="cart-button" onclick="addToCart('Custom Pants 6', '$175')"><i class="fas fa-shopping-cart"></i> รถเข็น</button>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity1">จำนวน:</label>
+            <select id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size1">ไซต์:</label>
+            <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal1', 'Custom Pants 1')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity2">จำนวน:</label>
+            <select id="quantity2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size2">ไซต์:</label>
+            <select id="size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal2', 'Custom Pants 2')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity3">จำนวน:</label>
+            <select id="quantity3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size3">ไซต์:</label>
+            <select id="size3">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal3', 'Custom Pants 3')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity4">จำนวน:</label>
+            <select id="quantity4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size4">ไซต์:</label>
+            <select id="size4">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal4', 'Custom Pants 4')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity5">จำนวน:</label>
+            <select id="quantity5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size5">ไซต์:</label>
+            <select id="size5">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal5', 'Custom Pants 5')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>ยืนยันการซื้อสินค้า</h2>
+            <p>กรุณาเลือกจำนวนและไซต์ของกางเกง</p>
+
+            <label for="quantity6">จำนวน:</label>
+            <select id="quantity6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="size6">ไซต์:</label>
+            <select id="size6">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+            <button onclick="confirmPurchase('modal6', 'Custom Pants 6')">ยืนยันการซื้อ</button>
+        </div>
+    </div>
+
+    <div class="cart-icon" onclick="viewCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span> 
+    </div>
+
+    <script src="prodscript.js"></script>
+</body>
+
+</html>

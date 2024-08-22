@@ -1,0 +1,51 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #72441eab;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 15px 30px;
+}
+
+.social-icon {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+    font-size: 80px;
+    color: #333; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+.line:hover {
+    color: #00c300;
+}
+.discord:hover {
+    color: #7289da; 
+}
+
+.email:hover {
+    color: #000;
+}
